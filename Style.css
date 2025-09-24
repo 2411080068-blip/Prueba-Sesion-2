@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo degradado animado */
+body {
+  background: linear-gradient(135deg, #95a0ff, #8458bd);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Animación del fondo */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilo del encabezado */
+header {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(4, 5, 20, 0.493);
+}
+
+/* Número en la esquina superior derecha */
+.header-number {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3d0596;
+  text-shadow: 0 0 8px #4d0b8b;
+}
+
+/* Título principal */
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(270deg, #8c67f1, #eeeef7, #3ea3ca, #facc15, #ff6ec4);
+  background-size: 1000% 1000%;
+  border-radius: 50%;
+  animation: gradientText 2s ease infinite;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(66, 47, 5, 0.7);
+}
+
+/* Animación para mover el gradiente */
+@keyframes gradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+/* Navegación */
+nav ul.menu {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(93, 8, 206, 0.85);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(243, 91, 205, 0.5);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+nav ul.menu li a:hover {
+  background-color: #fff;
+  color: #2575fc;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+}
+
+/* Secciones principales */
+main {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  color: #5207a8;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #eff31c;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Enlaces en párrafos */
+section p a {
+  color: #d5e925;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+section p a:hover {
+  color: #fff;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 50px;
+  color: #f3d250;
+  font-weight: 700;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
