@@ -6,3 +6,13 @@ document.addEventListener("DOMContentLoaded" ,() => {
         alert("Disponible los martes y fines de semana");
     });
  });
+ window.addEventListener("load", function () {
+    const modal = document.getElementById("bienvenida-modal");
+    const botonCerrar = document.getElementById("cerrar-modal");
+
+    modal.style.display = "flex";
+
+    botonCerrar.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+});

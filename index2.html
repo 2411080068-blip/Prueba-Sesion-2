@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universidad Nacional de Cañete</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFyJUMzJUFEc3xlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    /* Efecto fade-in para las imágenes */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 bg-opacity-70">
+
+  <!-- HEADER -->
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Junta Todo Que Ver</span>
+          <img
+            src="https://akamai.sscdn.co/letras/360x360/albuns/6/5/9/b/3965811758878564.jpg"
+            alt=""
+            class="h-8 w-auto"
+          />
+        </a>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#carreras" class="text-sm/6 font-semibold text-black">Carreras</a>
+        <a href="#docentes" class="text-sm/6 font-semibold text-black">Docentes</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div
+      aria-hidden="true"
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+    >
+      <div
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+        class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"
+      ></div>
+    </div>
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
+          JUNTA TODO QUE VER
+        </h1>
+        <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">
+          "CON PENSAMIENTOS CLAROS Y DECISIVOS"
+        </p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="#carreras"
+            class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400"
+            >Empieza ya</a
+          >
+          <a href="#footer" class="text-sm/6 font-semibold text-white"
+            >Conoce más <span aria-hidden="true">→</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECCIÓN CARRERAS -->
+  <div id="carreras" class="bg-white bg-opacity-90 py-24 sm:py-32" style="background-image: url('https://static3.depositphotos.com/1003473/160/i/450/depositphotos_1601892-stock-photo-blue-wavy-background.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;">
+    <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div class="max-w-xl">
+      
+        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+          OFRECEMOS LAS SIGUIENTES CARRERAS
+        </h2>
+        <p class="mt-6 text-lg/8 text-gray-600">
+          Conoce las carreras que ofrece la Junta Todo Que Ver.
+        </p>
+      </div>
+      <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img
+              src="https://worldcampus.saintleo.edu/img/article/estudiar-ingenieria-en-sistemas-cuales-son-los-retos-de-ser-ingenierio-en-sistemas.webp"
+              alt=""
+              class="w-40 h-40 rounded-full outline-1 -outline-offset-1 outline-black/5 fade-in"
+            />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">INGENIERÍA DE SISTEMAS</h3>
+              <p class="text-sm/6 font-semibold text-indigo-600">DOMINA LA TECNOLOGIA</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img
+              src="https://d5tnfl9agh5vb.cloudfront.net/uploads/2023/07/Administracion-de-Empresas.jpg"
+              alt=""
+              class="w-40 h-40 rounded-full outline-1 -outline-offset-1 outline-black/5 fade-in"
+            />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">ADMINISTRACIÓN</h3>
+              <p class="text-sm/6 font-semibold text-indigo-600">ADMINISTRA TODO QUE VER</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+              class="w-40 h-40 rounded-full outline-1 -outline-offset-1 outline-black/5 fade-in"
+            />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">CONTABILIDAD</h3>
+              <p class="text-sm/6 font-semibold text-indigo-600">PROFESIONALISMO Y COMPETENCIA</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img
+              src="https://static.wixstatic.com/media/11062b_db71c2cc2e574c26b9cbed9934f3bf98~mv2.jpg/v1/fill/w_568,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_db71c2cc2e574c26b9cbed9934f3bf98~mv2.jpg"
+              alt=""
+              class="w-40 h-40 rounded-full outline-1 -outline-offset-1 outline-black/5 fade-in"
+            />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">AGRONOMÍA</h3>
+              <p class="text-sm/6 font-semibold text-indigo-600">IMPACTA EN LA TIERRA</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img
+              src="https://cepean.edu.pe/wp-content/uploads/2022/07/imagen.jpg"
+              alt=""
+              class="w-40 h-40 rounded-full outline-1 -outline-offset-1 outline-black/5 fade-in"
+            />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-gray-900">ADMINISTRACIÓN HOTELERA</h3>
+              <p class="text-sm/6 font-semibold text-indigo-600">SE CLAVE EN EL TURISMO</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECCIONES EXTRA -->
+  <div id="docentes" class="bg-gray-900 py-24 sm:py-32" style="background-image: url('https://img.freepik.com/vector-gratis/fondo-geometrico-abstracto-diseno-poli_1048-8354.jpg?semt=ais_hybrid&w=740&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;">>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl">NUESTRAS DOCENTES VERIFICADAS</h2>
+      <p class="mt-4 text-lg leading-8 text-gray-300">
+        Conoce al equipo de profesionales especializados en rubros competentes.
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- DOCENTE 1 -->
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Sk4FoSREQYc44vlOjrEGML4_WTVK0lStLw&s" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">KARINA TORRES</h3>
+        <p class="text-sm leading-6 text-gray-400">LIC. CLARA Y DECISIVA</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://i.pinimg.com/736x/00/10/04/0010044438f9ab663ea6b265f1319b5e.jpg" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">WANDA MAXIMOFF</h3>
+        <p class="text-sm leading-6 text-gray-400">DRA. WITCH</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://st.depositphotos.com/70843308/60939/i/450/depositphotos_609399750-stock-photo-american-rapper-doja-cat-amala.jpg" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">AMALA DLAMINI</h3>
+        <p class="text-sm leading-6 text-gray-400">LIC. ACUERPADA</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBM1naUXXdgrki0Ck-J9V4_bu3UbnKRrKHxA&s" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">KENTO MIYAURA</h3>
+        <p class="text-sm leading-6 text-gray-400">MG. BLOQUEADOR</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://i.pinimg.com/originals/5a/d8/56/5ad8568387e48b8689298e2d09e5fdc2.jpg" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">ANGIE VELAZCO</h3>
+        <p class="text-sm leading-6 text-gray-400">ING. PAPEADORA</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-gray-800 p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVTqna24xnXDwIIPQroxJD6wWrQY5I5QRNg&s" alt="">
+        <h3 class="mt-6 text-lg font-semibold leading-7 text-white">MILEENA KHANUN</h3>
+        <p class="text-sm leading-6 text-gray-400">MG. FRIA DE FRIAS</p>
+        <div class="mt-4 flex justify-center gap-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- FontAwesome para íconos -->
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  </div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.fade-in');
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      images.forEach(img => observer.observe(img));
+    });
+  </script>
+  
+<footer id=footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8">
+
+      <div class="md:col-span-2">
+        <div class="flex items-center space-x-2">
+          <img src="https://akamai.sscdn.co/letras/360x360/albuns/6/5/9/b/3965811758878564.jpg" 
+               alt="Logo UNDC" 
+               class="h-8 w-auto">
+          <span class="text-white font-semibold">JUNTA TODO QUE VER</span>
+        </div>
+        <p class="mt-4 text-sm">
+          Organización comprometida con el desarrollo.
+        </p>
+        <!-- Redes sociales -->
+        <div class="mt-6 flex space-x-5">
+          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-github"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Solutions -->
+      <div>
+        <h3 class="text-white font-semibold mb-4">Carreras</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#carreras" class="hover:text-white">Ingeniería de Sistemas</a></li>
+          <li><a href="#carreras" class="hover:text-white">Administración</a></li>
+          <li><a href="#carreras" class="hover:text-white">Contabilidad</a></li>
+          <li><a href="#carreras" class="hover:text-white">Agronomía</a></li>
+          <li><a href="#carreras" class="hover:text-white">Turismo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Apoyo</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">Inicio</a></li>
+          <li><a href="#carreras" class="hover:text-white">Carreras</a></li>
+          <li><a href="#docentes" class="hover:text-white">Docentes pros</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Trabajos</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Maqueta</a></li>
+          <li><a href="Pagina2.html" class="hover:text-white">css</a></li>
+          <li><a href="Pagina3.html" class="hover:text-white">css2</a></li>
+          <li><a href="Pagina4.html" class="hover:text-white">css3</a></li>
+          <li><a href="Pagina5.html" class="hover:text-white">css2.2</a></li>
+          <li><a href="html.html" class="hover:text-white">Responsive</a></li>
+          <li><a href="index2.html" class="hover:text-white">Responsi/tailwind</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+      © 2025 UNDCINO IVCICLO. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2e0a6ad65.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+

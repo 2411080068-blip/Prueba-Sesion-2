@@ -254,4 +254,10 @@ a:hover {
   line-height: 1.5;
   border: 2px solid #fff;
 }
+.check-animado {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 
